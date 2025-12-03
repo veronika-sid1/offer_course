@@ -11,7 +11,7 @@ public class Rectangle {
         System.out.println(rectangle.calculateArea());
     }
 
-    Rectangle(int width, int height) {
+    public Rectangle(int width, int height) {
         this.width = width;
         this.height = height;
     }
