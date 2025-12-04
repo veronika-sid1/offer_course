@@ -60,7 +60,7 @@ public class MathOperations {
 
     public static double divide(int x, int y) {
         if (y == 0) {
-            System.out.println("Нельзя делить на ноль!!");
+            System.out.println(Messages.getBundle("error.div.by.zero"));
             return 0;
         }
         return x / (double) y;
@@ -88,7 +88,7 @@ public class MathOperations {
 
     public static double averageSpeed(double distance, double time) {
         if (time == 0) {
-            System.out.println("Делитель не должен быть равен 0! Проверьте аргумент time");
+            System.out.println(Messages.ERROR_DIVIDE_BY_ZERO);
             return 0;
         }
         return distance / time;
@@ -98,7 +98,7 @@ public class MathOperations {
         if ((a > 0) && (b > 0)) {
             return Math.sqrt(a*a + b*b);
         }
-        System.out.println("оба значения должны быть положительными!");
+        System.out.println(Messages.ERROR_NOT_POSITIVE_NUMBERS);
         return 0;
     }
 
@@ -108,7 +108,7 @@ public class MathOperations {
 
     public static double calculatePercentage(double total, double part) {
         if (part == 0) {
-            System.out.println("Недопустимое значение part = 0!");
+            System.out.println(Messages.ERROR_DIVIDE_BY_ZERO);
             return 0;
         }
         return (total / part) * 100;
