@@ -1,3 +1,5 @@
+package homework_practice_1;
+
 public class MathOperations_prep {
 
     public static void main(String[] args) {

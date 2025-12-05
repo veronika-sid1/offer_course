@@ -1,3 +1,5 @@
+package homework_practice_2;
+
 public class StudentTest {
 
     int age;

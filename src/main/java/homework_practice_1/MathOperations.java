@@ -1,4 +1,6 @@
-import javax.sound.midi.Soundbank;
+package homework_practice_1;
+
+import Common.Messages;
 
 public class MathOperations {
 
